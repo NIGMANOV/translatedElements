@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .blog-content{
+            margin: 15px;
+        }
+
+        .blog-content__stats{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <select name="lang" id="">
+            <option value="ru">Russian</option>
+            <option value="en">English</option>
+            <option value="uz">Uzbek</option>
+        </select>
+    </header>
+    <main>
+        <div class="blog-content">
+            <h1 data-lang="title">Статистика Узбекистана</h1>
+            
+            <div class="blog-content__stats">
+                <p data-lang="vvp">ВАЛОВОЙ ВНУТРЕННИЙ ПРОДУКТ</p>
+                <p data-lang="prom">ПРОМЫШЛЕННОСТЬ</p>
+                <p data-lang="sel">CЕЛЬСКОЕ, ЛЕСНОЕ И РЫБНОЕ ХОЗЯЙСТВО</p>
+                <p data-lang="invest">ИНВЕСТИЦИИ В ОСНОВНОЙ КАПИТАЛ</p>
+                <p data-lang="stroy">СТРОИТЕЛЬНЫЕ РАБОТЫ</p>
+            </div>
+        </div>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
